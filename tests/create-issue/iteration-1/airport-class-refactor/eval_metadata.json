@@ -1,0 +1,6 @@
+{
+  "eval_id": 3,
+  "eval_name": "airport-class-refactor",
+  "prompt": "/create-issue Refactor Airport class removing implementation leak.",
+  "assertions": []
+}

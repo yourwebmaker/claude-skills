@@ -1,0 +1,1 @@
+Introduce Trip class to model multi-leg / round-trip itineraries

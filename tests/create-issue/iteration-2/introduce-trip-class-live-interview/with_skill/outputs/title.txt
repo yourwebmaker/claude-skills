@@ -1,0 +1,1 @@
+Reject flights where origin equals destination

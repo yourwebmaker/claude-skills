@@ -1,0 +1,366 @@
+{
+  "metadata": {
+    "skill_name": "create-issue",
+    "skill_path": "/Users/yourwebmaker/.claude/skills/create-issue",
+    "executor_model": "claude-sonnet-5",
+    "analyzer_model": "claude-sonnet-5",
+    "timestamp": "2026-07-17T23:04:31.679446+00:00",
+    "evals_run": [
+      "symfony-validator-refactor",
+      "more-fixture-flights",
+      "airport-class-refactor",
+      "introduce-trip-class",
+      "introduce-trip-class-live-interview",
+      "template-detection"
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "symfony-validator-refactor",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 336.0,
+        "tokens": 56490,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: '`FlightController::search()` currently validates its three required query parameters (`origin`, `destination`, `date`) b'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As a developer maintaining `aeronuk-flight-search`, I want `FlightController` to validate its inputs via Symfony Validat'"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 5 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As a developer maintaining `aeronuk-flight-search`, I want `FlightController` to validate its inputs via Symfony Validator instead of hand-rolled `if`"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/9"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "more-fixture-flights",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.286,
+        "passed": 2,
+        "failed": 5,
+        "total": 7,
+        "time_seconds": 322.7,
+        "tokens": 46232,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": false,
+          "evidence": "No '## Background' heading found"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": false,
+          "evidence": "No '## User Story' heading found"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Acceptance Criteria' heading found"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Tasks' heading found"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": false,
+          "evidence": "No User Story section to check"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/11"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "airport-class-refactor",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 285.6,
+        "tokens": 48457,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: '`AirportCode` is a closed, string-backed enum (`JFK`/`LAX`/`ORD`/`SFO`/`LHR`/`NRT`) meant to be the single source of tru'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As a developer working on `aeronuk-flight-search`, I want the parsing/normalization of user-supplied airport codes encap'"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 4 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As a developer working on `aeronuk-flight-search`, I want the parsing/normalization of user-supplied airport codes encapsulated in `AirportCode` itsel"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/10"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "introduce-trip-class",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 377.7,
+        "tokens": 52442,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: 'The domain model in `aeronuk-flight-search` currently revolves entirely around a single `Flight` (`src/Entity/Flight.php'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As a traveler searching for flights, I want to search for and view multi-leg trips made up of connecting flights, so tha'"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 4 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As a traveler searching for flights, I want to search for and view multi-leg trips made up of connecting flights, so that I can travel between airport"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/13"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "introduce-trip-class-live-interview",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: '`Flight` currently has no rule preventing `origin` and `destination` from\\nbeing the same `AirportCode`. Nothing in the e'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As someone searching for or creating flights, I want the system to reject a\\nflight whose origin and destination are iden'"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 2 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As someone searching for or creating flights, I want the system to reject a\nflight whose origin and destination are identical, so that the data can\nne"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/14"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": [
+        "Run live in conversation (not a background subagent) \u2014 no comparable timing/token data."
+      ]
+    },
+    {
+      "eval_id": 6,
+      "eval_name": "template-detection",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 277.8,
+        "tokens": 38148,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Detected and used the repo custom template (Summary/Motivation/Proposed Solution/Checklist) instead of the default structure",
+          "passed": true,
+          "evidence": "All four template headings present"
+        },
+        {
+          "text": "Motivation section uses real blank-line-separated paragraphs, not one dense block",
+          "passed": true,
+          "evidence": "8 blank-line breaks found in body"
+        },
+        {
+          "text": "Checklist uses GitHub checkbox items",
+          "passed": true,
+          "evidence": "Checkbox items found under Checklist"
+        },
+        {
+          "text": "Issue was actually created",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/12"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied (the template's own default)",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.881,
+        "stddev": 0.2915,
+        "min": 0.286,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 319.96,
+        "stddev": 40.4869,
+        "min": 277.8,
+        "max": 377.7
+      },
+      "tokens": {
+        "mean": 48353.8,
+        "stddev": 6920.6605,
+        "min": 38148,
+        "max": 56490
+      }
+    }
+  },
+  "notes": [
+    "Iteration 2 targets three fixes from iteration-1 feedback: (1) Background paragraphs now use real blank-line breaks instead of one dense block, (2) issue-template detection, (3) a clarification step for genuinely ambiguous requests.",
+    "symfony-validator-refactor, airport-class-refactor, and introduce-trip-class scored 7/7 \u2014 confirming the paragraph-break fix held on re-run.",
+    "more-fixture-flights scored only 2/7 against the DEFAULT-structure expectations, but that's a false negative: it correctly detected the sandbox repo's custom issue template and used Summary/Motivation/Proposed Solution/Checklist instead, which the grading script (written for the default structure) doesn't recognize as valid. Manually confirmed it has real paragraph breaks and checkboxes under the template's own headings.",
+    "template-detection (a dedicated new eval) scored 5/5 against template-aware expectations \u2014 clean adaptation to the repo's actual template.",
+    "introduce-trip-class-live-interview is the one eval that was NOT run as a background subagent \u2014 Claude ran the skill directly in conversation and asked the real user two rounds of clarifying questions before drafting, since 'Introduce Trip class' was genuinely ambiguous. The user's answers substantially changed the scope (from a new Trip entity to an origin != destination validation rule on the existing Flight entity) \u2014 confirming the clarification step catches real scope drift that a silent-assumption approach would have missed.",
+    "Finding during this round: 3 of the 5 background subagents noticed the sandbox repo's template but explicitly chose to keep the default structure anyway, reasoning it should stay 'consistent with the prior iteration-1 run' \u2014 an exception the skill never actually states. This was mostly an artifact of the test prompt's re-run framing, but the skill's step 1 was tightened to explicitly close that loophole."
+  ]
+}

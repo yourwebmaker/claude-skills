@@ -1,0 +1,69 @@
+{
+  "skill_name": "create-issue",
+  "evals": [
+    {
+      "id": 1,
+      "name": "symfony-validator-refactor",
+      "prompt": "/create-issue Use Symfony Validator on FlightController instead of individual validations.",
+      "expected_output": "A well-formed GitHub issue with Background/User Story/Acceptance Criteria/Tasks sections, grounded in the actual FlightController.php validation code, labeled enhancement.",
+      "files": [],
+      "expectations": [
+        "Body contains a '## Background' heading",
+        "Body contains a '## User Story' heading",
+        "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+        "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+        "User Story follows 'As a ..., I want ..., so that ...' shape",
+        "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+        "Issue has the 'enhancement' label applied"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "more-fixture-flights",
+      "prompt": "/create-issue Create more flights on fixture loading.",
+      "expected_output": "A well-formed GitHub issue grounded in FlightFixtures.php's current data, labeled enhancement.",
+      "files": [],
+      "expectations": [
+        "Body contains a '## Background' heading",
+        "Body contains a '## User Story' heading",
+        "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+        "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+        "User Story follows 'As a ..., I want ..., so that ...' shape",
+        "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+        "Issue has the 'enhancement' label applied"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "airport-class-refactor",
+      "prompt": "/create-issue Refactor Airport class removing implementation leak.",
+      "expected_output": "A well-formed GitHub issue grounded in AirportCode.php's actual structure, labeled enhancement.",
+      "files": [],
+      "expectations": [
+        "Body contains a '## Background' heading",
+        "Body contains a '## User Story' heading",
+        "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+        "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+        "User Story follows 'As a ..., I want ..., so that ...' shape",
+        "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+        "Issue has the 'enhancement' label applied"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "introduce-trip-class",
+      "prompt": "/create-issue Introduce Trip class.",
+      "expected_output": "A well-formed GitHub issue proposing a new Trip concept, grounded in the existing Flight/Seat domain model, labeled enhancement.",
+      "files": [],
+      "expectations": [
+        "Body contains a '## Background' heading",
+        "Body contains a '## User Story' heading",
+        "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+        "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+        "User Story follows 'As a ..., I want ..., so that ...' shape",
+        "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+        "Issue has the 'enhancement' label applied"
+      ]
+    }
+  ]
+}

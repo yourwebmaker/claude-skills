@@ -1,0 +1,1 @@
+Encapsulate AirportCode input parsing to remove implementation leak from FlightController

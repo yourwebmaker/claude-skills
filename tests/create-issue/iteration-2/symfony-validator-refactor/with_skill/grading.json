@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "text": "Body contains a '## Background' heading",
+      "passed": true,
+      "evidence": "Found section: '`FlightController::search()` currently validates its three required query parameters (`origin`, `destination`, `date`) b'"
+    },
+    {
+      "text": "Body contains a '## User Story' heading",
+      "passed": true,
+      "evidence": "Found section: 'As a developer maintaining `aeronuk-flight-search`, I want `FlightController` to validate its inputs via Symfony Validat'"
+    },
+    {
+      "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+      "passed": true,
+      "evidence": "Found 5 lines, checkboxes=True"
+    },
+    {
+      "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+      "passed": true,
+      "evidence": "checkboxes=True"
+    },
+    {
+      "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+      "passed": true,
+      "evidence": "As a developer maintaining `aeronuk-flight-search`, I want `FlightController` to validate its inputs via Symfony Validator instead of hand-rolled `if`"
+    },
+    {
+      "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+      "passed": true,
+      "evidence": "https://github.com/yourwebmaker/claude-skills/issues/9"
+    },
+    {
+      "text": "Issue has the 'enhancement' label applied",
+      "passed": true,
+      "evidence": "Labels found: ['enhancement']"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  }
+}

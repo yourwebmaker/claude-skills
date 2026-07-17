@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "symfony-validator-refactor",
+  "prompt": "/create-issue Use Symfony Validator on FlightController instead of individual validations.",
+  "assertions": []
+}

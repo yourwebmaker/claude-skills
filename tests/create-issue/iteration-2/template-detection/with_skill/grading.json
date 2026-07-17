@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Detected and used the repo custom template (Summary/Motivation/Proposed Solution/Checklist) instead of the default structure",
+      "passed": true,
+      "evidence": "All four template headings present"
+    },
+    {
+      "text": "Motivation section uses real blank-line-separated paragraphs, not one dense block",
+      "passed": true,
+      "evidence": "8 blank-line breaks found in body"
+    },
+    {
+      "text": "Checklist uses GitHub checkbox items",
+      "passed": true,
+      "evidence": "Checkbox items found under Checklist"
+    },
+    {
+      "text": "Issue was actually created",
+      "passed": true,
+      "evidence": "https://github.com/yourwebmaker/claude-skills/issues/12"
+    },
+    {
+      "text": "Issue has the 'enhancement' label applied (the template's own default)",
+      "passed": true,
+      "evidence": "Labels found: ['enhancement']"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

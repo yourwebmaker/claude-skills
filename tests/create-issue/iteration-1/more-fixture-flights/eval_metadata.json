@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "more-fixture-flights",
+  "prompt": "/create-issue Create more flights on fixture loading.",
+  "assertions": []
+}

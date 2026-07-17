@@ -1,0 +1,1 @@
+Refactor AirportCode to own its input-parsing logic

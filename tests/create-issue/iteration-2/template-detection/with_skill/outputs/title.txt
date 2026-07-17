@@ -1,0 +1,1 @@
+Add CONTRIBUTING.md guide for adding new skills

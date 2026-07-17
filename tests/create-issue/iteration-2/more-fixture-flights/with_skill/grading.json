@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "text": "Body contains a '## Background' heading",
+      "passed": false,
+      "evidence": "No '## Background' heading found"
+    },
+    {
+      "text": "Body contains a '## User Story' heading",
+      "passed": false,
+      "evidence": "No '## User Story' heading found"
+    },
+    {
+      "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+      "passed": false,
+      "evidence": "No '## Acceptance Criteria' heading found"
+    },
+    {
+      "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+      "passed": false,
+      "evidence": "No '## Tasks' heading found"
+    },
+    {
+      "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+      "passed": false,
+      "evidence": "No User Story section to check"
+    },
+    {
+      "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+      "passed": true,
+      "evidence": "https://github.com/yourwebmaker/claude-skills/issues/11"
+    },
+    {
+      "text": "Issue has the 'enhancement' label applied",
+      "passed": true,
+      "evidence": "Labels found: ['enhancement']"
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 5,
+    "total": 7,
+    "pass_rate": 0.286
+  }
+}

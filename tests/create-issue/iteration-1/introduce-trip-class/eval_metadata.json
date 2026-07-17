@@ -1,0 +1,6 @@
+{
+  "eval_id": 4,
+  "eval_name": "introduce-trip-class",
+  "prompt": "/create-issue Introduce Trip class.",
+  "assertions": []
+}

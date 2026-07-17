@@ -1,0 +1,1 @@
+Use Symfony Validator on FlightController instead of individual validations

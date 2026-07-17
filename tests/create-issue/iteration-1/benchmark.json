@@ -1,0 +1,502 @@
+{
+  "metadata": {
+    "skill_name": "create-issue",
+    "skill_path": "/Users/yourwebmaker/.claude/skills/create-issue",
+    "executor_model": "claude-sonnet-5",
+    "analyzer_model": "claude-sonnet-5",
+    "timestamp": "2026-07-17T22:36:17.109628+00:00",
+    "evals_run": [
+      "symfony-validator-refactor",
+      "more-fixture-flights",
+      "airport-class-refactor",
+      "introduce-trip-class"
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "symfony-validator-refactor",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 647.9,
+        "tokens": 40921,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: '`FlightController::search()` currently validates its three required query\\nparameters (`origin`, `destination`, `date`) b'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As a developer maintaining `aeronuk-flight-search`, I want `FlightController`\\nto validate its inputs via Symfony Validat'"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 5 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As a developer maintaining `aeronuk-flight-search`, I want `FlightController`\nto validate its inputs via Symfony Validator instead of hand-rolled\n`if`"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/8"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "symfony-validator-refactor",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.143,
+        "passed": 1,
+        "failed": 6,
+        "total": 7,
+        "time_seconds": 528.8,
+        "tokens": 38332,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": false,
+          "evidence": "No '## Background' heading found"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": false,
+          "evidence": "No '## User Story' heading found"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Acceptance Criteria' heading found"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Tasks' heading found"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": false,
+          "evidence": "No User Story section to check"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/1"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": false,
+          "evidence": "Labels found: []"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "more-fixture-flights",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 132.5,
+        "tokens": 39464,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: '`src/DataFixtures/FlightFixtures.php` currently seeds only 5 flights (`AN101`,\\n`AN102`, `AN201`, `AN305`, `AN410`), cove'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As a developer working on flight search, I want the dev/test fixtures to seed\\na broader, more varied set of flights, so '"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 5 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As a developer working on flight search, I want the dev/test fixtures to seed\na broader, more varied set of flights, so that I can exercise different\n"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/2"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "more-fixture-flights",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.143,
+        "passed": 1,
+        "failed": 6,
+        "total": 7,
+        "time_seconds": 512.0,
+        "tokens": 34389,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": false,
+          "evidence": "No '## Background' heading found"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": false,
+          "evidence": "No '## User Story' heading found"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Acceptance Criteria' heading found"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Tasks' heading found"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": false,
+          "evidence": "No User Story section to check"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/7"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": false,
+          "evidence": "Labels found: []"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "airport-class-refactor",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 507.4,
+        "tokens": 49255,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: '`AeroNuk\\\\FlightSearch\\\\ValueObject\\\\AirportCode` is a closed, string-backed enum\\n(`JFK`, `LAX`, `ORD`, `SFO`, `LHR`, `NRT`'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As a developer maintaining `aeronuk-flight-search`, I want `AirportCode` to\\nown the rules for turning a raw string into '"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 4 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As a developer maintaining `aeronuk-flight-search`, I want `AirportCode` to\nown the rules for turning a raw string into a valid airport code, so that\n"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/4"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "airport-class-refactor",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.143,
+        "passed": 1,
+        "failed": 6,
+        "total": 7,
+        "time_seconds": 492.0,
+        "tokens": 42232,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": false,
+          "evidence": "No '## Background' heading found"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": false,
+          "evidence": "No '## User Story' heading found"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Acceptance Criteria' heading found"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Tasks' heading found"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": false,
+          "evidence": "No User Story section to check"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/3"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": false,
+          "evidence": "Labels found: []"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "introduce-trip-class",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 497.0,
+        "tokens": 43778,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": true,
+          "evidence": "Found section: 'The domain model in `aeronuk-flight-search` currently revolves entirely around a\\nsingle `Flight` (`src/Entity/Flight.php'"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": true,
+          "evidence": "Found section: 'As a traveler searching for flights, I want to search for and view multi-leg\\ntrips made up of connecting flights, so tha'"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "Found 4 lines, checkboxes=True"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": true,
+          "evidence": "checkboxes=True"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": true,
+          "evidence": "As a traveler searching for flights, I want to search for and view multi-leg\ntrips made up of connecting flights, so that I can travel between airport"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/5"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": true,
+          "evidence": "Labels found: ['enhancement']"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "introduce-trip-class",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.143,
+        "passed": 1,
+        "failed": 6,
+        "total": 7,
+        "time_seconds": 468.6,
+        "tokens": 36619,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Body contains a '## Background' heading",
+          "passed": false,
+          "evidence": "No '## Background' heading found"
+        },
+        {
+          "text": "Body contains a '## User Story' heading",
+          "passed": false,
+          "evidence": "No '## User Story' heading found"
+        },
+        {
+          "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Acceptance Criteria' heading found"
+        },
+        {
+          "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+          "passed": false,
+          "evidence": "No '## Tasks' heading found"
+        },
+        {
+          "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+          "passed": false,
+          "evidence": "No User Story section to check"
+        },
+        {
+          "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+          "passed": true,
+          "evidence": "https://github.com/yourwebmaker/claude-skills/issues/6"
+        },
+        {
+          "text": "Issue has the 'enhancement' label applied",
+          "passed": false,
+          "evidence": "Labels found: []"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 446.2,
+        "stddev": 220.1641,
+        "min": 132.5,
+        "max": 647.9
+      },
+      "tokens": {
+        "mean": 43354.5,
+        "stddev": 4322.5442,
+        "min": 39464,
+        "max": 49255
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.143,
+        "stddev": 0.0,
+        "min": 0.143,
+        "max": 0.143
+      },
+      "time_seconds": {
+        "mean": 500.35,
+        "stddev": 25.9674,
+        "min": 468.6,
+        "max": 528.8
+      },
+      "tokens": {
+        "mean": 37893.0,
+        "stddev": 3312.6391,
+        "min": 34389,
+        "max": 42232
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.86",
+      "time_seconds": "-54.2",
+      "tokens": "+5462"
+    }
+  },
+  "notes": [
+    "All 4 with_skill runs scored a clean 7/7 \u2014 the fixed Background/User Story/Acceptance Criteria/Tasks structure with checkboxes was followed consistently.",
+    "All 4 without_skill (baseline) runs scored 1/7 \u2014 they only pass 'issue was actually created'; none used the fixed heading structure or checkbox lists, confirming the skill's structural contract isn't something Claude does by default without the skill.",
+    "with_skill runs took longer on average, likely because grounding the issue in real code (reading FlightController.php, AirportCode.php, etc.) adds exploration time before drafting \u2014 this cost buys a issue that's actually specific to the codebase rather than generic."
+  ]
+}

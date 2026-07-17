@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "text": "Body contains a '## Background' heading",
+      "passed": true,
+      "evidence": "Found section: '`src/DataFixtures/FlightFixtures.php` currently seeds only 5 flights (`AN101`,\\n`AN102`, `AN201`, `AN305`, `AN410`), cove'"
+    },
+    {
+      "text": "Body contains a '## User Story' heading",
+      "passed": true,
+      "evidence": "Found section: 'As a developer working on flight search, I want the dev/test fixtures to seed\\na broader, more varied set of flights, so '"
+    },
+    {
+      "text": "Body contains a '## Acceptance Criteria' heading with checkbox ('- [ ]') items",
+      "passed": true,
+      "evidence": "Found 5 lines, checkboxes=True"
+    },
+    {
+      "text": "Body contains a '## Tasks' heading with checkbox ('- [ ]') items",
+      "passed": true,
+      "evidence": "checkboxes=True"
+    },
+    {
+      "text": "User Story follows 'As a ..., I want ..., so that ...' shape",
+      "passed": true,
+      "evidence": "As a developer working on flight search, I want the dev/test fixtures to seed\na broader, more varied set of flights, so that I can exercise different\n"
+    },
+    {
+      "text": "Issue was actually created (issue_url.txt has a valid github.com issues URL)",
+      "passed": true,
+      "evidence": "https://github.com/yourwebmaker/claude-skills/issues/2"
+    },
+    {
+      "text": "Issue has the 'enhancement' label applied",
+      "passed": true,
+      "evidence": "Labels found: ['enhancement']"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  }
+}

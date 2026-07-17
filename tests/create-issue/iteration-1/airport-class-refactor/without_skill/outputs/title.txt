@@ -1,0 +1,1 @@
+Refactor AirportCode: stop leaking its 3-character length assumption into Flight and FlightController

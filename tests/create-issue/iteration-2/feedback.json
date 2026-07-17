@@ -1,0 +1,10 @@
+{
+  "reviews": [
+    {
+      "run_id": "introduce-trip-class-live-interview-with_skill",
+      "feedback": "I actually thought about creating a new class, which I initially called \"Trip\" to encapsulate the origin === destination validation. Something like a value object or something to reduce the amount of parameters passed by the Flight constructor or FlightRepository search. That's why I wanted to be interviewed more in order to get to this solution.",
+      "timestamp": "2026-07-17T23:09:50.166Z"
+    }
+  ],
+  "status": "in_progress"
+}
