@@ -77,7 +77,10 @@ against `main` by the time anyone looks at it.
 8. **Push the branch and open a PR** (`gh pr create`), with a body that
    references the issue (`Closes #<number>`) and briefly summarizes what
    changed and why — enough for a reviewer to orient without re-reading
-   every commit. Report the PR URL back.
+   every commit. As soon as `gh pr create` returns, surface the PR URL —
+   lead your final message with it (e.g. `PR: <url>`) rather than burying it
+   at the bottom of a longer summary. The URL is the one thing the person
+   who asked you to do this actually needs to act on next.
 
 9. **Stop there.** Never run `gh pr merge` or merge the branch by any other
    means, regardless of how confident you are or how trivial the change
