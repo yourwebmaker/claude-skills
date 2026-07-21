@@ -88,6 +88,22 @@ against `main` by the time anyone looks at it.
    asked to "just merge it if it's fine," since by construction you have no
    one to actually confirm that request with mid-task.
 
+## If the solution changes mid-task
+
+Plans drift: a task turns out to need a different approach, a blocker forces
+a design change, or you discover partway through that the original checklist
+doesn't match what's actually being built. Treat the issue body and (once
+opened) the PR description as living documents that describe the current
+solution, not a one-time snapshot of the original plan — update them at the
+point the change happens, not retroactively at the end:
+
+- **Issue body:** edit the Tasks/Acceptance Criteria text itself (not just
+  the checkboxes) so it describes what you're actually building, via
+  `gh issue edit <number> --body-file <updated body>`.
+- **PR description:** once a PR exists, edit it the same way
+  (`gh pr edit <number> --body-file <updated body>`) so it never describes a
+  solution you've since abandoned.
+
 ## If something blocks you
 
 If checks fail in a way you can't fix, or the issue's instructions turn out
